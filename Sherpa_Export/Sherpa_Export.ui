@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sherpa_ExportClass</class>
+ <widget class="QDialog" name="Sherpa_ExportClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>706</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sherpa_Export</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>670</width>
+     <height>670</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="commandLabel">
+          <property name="text">
+           <string>Command: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="cmdLineEdit">
+          <property name="text">
+           <string>C:/Program Files (x86)/NOKIA/Sherpa/sherpaqtgui.exe</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cmdPushButton">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="typeLabel">
+          <property name="text">
+           <string> Type:        </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="typeComboBox">
+          <item>
+           <property name="text">
+            <string>Global Statistic</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Scheduling Statistic</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Micro</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="tipLineEdit">
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="argGroupBox">
+      <property name="title">
+       <string>Args:</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QGroupBox" name="commGroupBoX">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="1" column="8">
+             <widget class="QCheckBox" name="tx4CheckBox">
+              <property name="text">
+               <string>4Tx</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QLabel" name="cellLabel">
+              <property name="text">
+               <string>                 cell: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="10">
+             <widget class="QLabel" name="alLabel">
+              <property name="text">
+               <string>           AL: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="bwLabel">
+              <property name="text">
+               <string>BandWidth: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="10">
+             <widget class="QLabel" name="sepLabel">
+              <property name="text">
+               <string>Separator: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="6">
+             <widget class="QLabel" name="outLabel">
+              <property name="text">
+               <string>Output prefix: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QPushButton" name="inPushButton">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QComboBox" name="CellComboBox">
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>13</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>14</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>16</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>17</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>18</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>19</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>20</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>21</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>22</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>23</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="7">
+             <widget class="QComboBox" name="AntComboBox">
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="2">
+             <widget class="QLineEdit" name="inLineEdit"/>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="inLabel">
+              <property name="text">
+               <string>Input file: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="6">
+             <widget class="QLabel" name="periodLabel_4">
+              <property name="text">
+               <string>               Ant: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="7" colspan="2">
+             <widget class="QLineEdit" name="outLineEdit">
+              <property name="text">
+               <string>sherpa</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="11" colspan="2">
+             <widget class="QLineEdit" name="sepLineEdit">
+              <property name="text">
+               <string>,</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1" colspan="2">
+             <widget class="QComboBox" name="BwComboBox">
+              <property name="maxCount">
+               <number>10</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>20</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1.4</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="11" colspan="2">
+             <widget class="QComboBox" name="AlComboBox">
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+           <zorder>sepLineEdit</zorder>
+           <zorder>outLineEdit</zorder>
+           <zorder>outLabel</zorder>
+           <zorder>inLineEdit</zorder>
+           <zorder>inLabel</zorder>
+           <zorder>bwLabel</zorder>
+           <zorder>BwComboBox</zorder>
+           <zorder>CellComboBox</zorder>
+           <zorder>periodLabel_4</zorder>
+           <zorder>AntComboBox</zorder>
+           <zorder>tx4CheckBox</zorder>
+           <zorder>sepLabel</zorder>
+           <zorder>AlComboBox</zorder>
+           <zorder>alLabel</zorder>
+           <zorder>cellLabel</zorder>
+           <zorder>inPushButton</zorder>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QGroupBox" name="retransGroupBox">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="5" column="5">
+             <widget class="QLabel" name="workDirLabel">
+              <property name="text">
+               <string>working directory:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="7">
+             <widget class="QLineEdit" name="workDirLineEdit">
+              <property name="text">
+               <string>E:/Troubleshooting/sherp_export</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0" colspan="2">
+             <widget class="QLabel" name="rlcRetransLabel">
+              <property name="text">
+               <string>rlcRetrans: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QLineEdit" name="ulRetransLineEdit">
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="pollRetransUlLabel">
+              <property name="text">
+               <string>pollRetransUl: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLineEdit" name="ulRetransRachMsg3LineEdit">
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="5">
+             <widget class="QLabel" name="pollRetransDlLabel">
+              <property name="text">
+               <string>pollRetransDl: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="7">
+             <widget class="QLineEdit" name="ulSpsRetransLineEdit">
+              <property name="text">
+               <string>4</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QLineEdit" name="pollRetransUlLineEdit">
+              <property name="text">
+               <string>60</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="3">
+             <widget class="QLabel" name="ulRetransRachMsg3Label">
+              <property name="text">
+               <string>ulRetransRachMsg3: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="7">
+             <widget class="QLineEdit" name="bundlingRetransLineEdit"/>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLineEdit" name="dlRetransLineEdit">
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="dlRetransLabel">
+              <property name="text">
+               <string>dlRetrans: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="7">
+             <widget class="QLineEdit" name="dlSpsRetransLineEdit">
+              <property name="text">
+               <string>3</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="5">
+             <widget class="QLabel" name="dlSpsRetransLabel">
+              <property name="text">
+               <string>dllSpsRetrans: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="3">
+             <widget class="QLineEdit" name="rlcRetransLineEdit">
+              <property name="text">
+               <string>10</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="7">
+             <widget class="QLineEdit" name="pollRetransDlLineEdit">
+              <property name="text">
+               <string>200</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="5">
+             <widget class="QLabel" name="bundlingRetransLabel">
+              <property name="text">
+               <string>bundlingRetrans: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="3">
+             <widget class="QLabel" name="ulRetransLabel">
+              <property name="text">
+               <string>ulRetrans: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLabel" name="ulSpsRetransLabel">
+              <property name="text">
+               <string>ulSpsRetrans: </string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="8">
+             <widget class="QPushButton" name="workDirPushButton">
+              <property name="text">
+               <string>...</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="checkBoxGroupBox">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="1" column="6">
+             <widget class="QCheckBox" name="othercceCheckBox">
+              <property name="text">
+               <string>othercce</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QCheckBox" name="useGroupSeparatorCheckBox">
+              <property name="text">
+               <string>useGroupSeparator</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QCheckBox" name="cqiCheckBox">
+              <property name="text">
+               <string>cqi</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="cceCheckBox">
+              <property name="text">
+               <string>cce</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QCheckBox" name="block7CheckBox">
+              <property name="text">
+               <string>bloc7</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QCheckBox" name="bcem2CheckBox">
+              <property name="text">
+               <string>bcem2</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QCheckBox" name="useLocaleSystemCheckBox">
+              <property name="text">
+               <string>useLocaleSystem</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QCheckBox" name="callflowCheckBox">
+              <property name="text">
+               <string>callflow</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QCheckBox" name="rlcCheckBox">
+              <property name="text">
+               <string>rlc</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QCheckBox" name="utcCheckBox">
+              <property name="text">
+               <string>utc</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="5">
+             <widget class="QCheckBox" name="uestateCheckBox">
+              <property name="text">
+               <string>uestate</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QCheckBox" name="sduCheckBox">
+              <property name="text">
+               <string>sdu</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="6">
+             <widget class="QCheckBox" name="ulcallflowCheckBox">
+              <property name="text">
+               <string>ulcallflow</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QCheckBox" name="dlcallflowCheckBox">
+              <property name="text">
+               <string>dlcallflow</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="scheGroupBox">
+         <property name="title">
+          <string/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="durationLineEdit">
+            <property name="text">
+             <string>-1</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="durationLabel">
+            <property name="text">
+             <string>Duration: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" rowspan="4">
+           <widget class="QGroupBox" name="globalStaticGroupBox">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="periodLabel">
+               <property name="text">
+                <string>Period: </string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLineEdit" name="ttibMaxStartPrbLineEdit"/>
+             </item>
+             <item row="2" column="0" colspan="2">
+              <widget class="QLabel" name="ttibMaxStartPrbLabel">
+               <property name="text">
+                <string>ttibMaxStartPrb: </string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0" colspan="2">
+              <widget class="QLabel" name="ttibMinStartPrbLabel">
+               <property name="text">
+                <string>ttibMinStartPrb: </string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="ttibMinStartPrbLineEdit"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLineEdit" name="periodLineEdit">
+               <property name="text">
+                <string>1000</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+            <zorder>periodLineEdit</zorder>
+            <zorder>periodLabel</zorder>
+            <zorder>ttibMinStartPrbLabel</zorder>
+            <zorder>ttibMinStartPrbLineEdit</zorder>
+            <zorder>ttibMaxStartPrbLineEdit</zorder>
+            <zorder>ttibMaxStartPrbLabel</zorder>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="minDurationLabel">
+            <property name="text">
+             <string>MinDuration: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="minDurationLineEdit"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="startSfnLabel">
+            <property name="text">
+             <string>startSfn: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="startSfnLineEdit"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="startLabel">
+            <property name="text">
+             <string>start: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="startLineEdit">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="minPLLabel">
+            <property name="text">
+             <string>minPathLoss: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="minPLLineEdit">
+            <property name="text">
+             <string>110</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="maxPLLineEdit">
+            <property name="text">
+             <string>122</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="maxPLLabel">
+            <property name="text">
+             <string>maxPathLoss: </string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1" colspan="2">
+           <widget class="QPlainTextEdit" name="execPlainTextEdit"/>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>CMD LINE==&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QPushButton" name="exportPushButton">
+            <property name="text">
+             <string>Export</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLabel" name="stateLabel">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+         <zorder>startSfnLineEdit</zorder>
+         <zorder>startLineEdit</zorder>
+         <zorder>startLabel</zorder>
+         <zorder>durationLabel</zorder>
+         <zorder>minPLLabel</zorder>
+         <zorder>durationLineEdit</zorder>
+         <zorder>minDurationLineEdit</zorder>
+         <zorder>startSfnLabel</zorder>
+         <zorder>minPLLineEdit</zorder>
+         <zorder>minDurationLabel</zorder>
+         <zorder>globalStaticGroupBox</zorder>
+         <zorder>execPlainTextEdit</zorder>
+         <zorder>maxPLLineEdit</zorder>
+         <zorder>maxPLLabel</zorder>
+         <zorder>label</zorder>
+         <zorder>exportPushButton</zorder>
+         <zorder>stateLabel</zorder>
+        </widget>
+       </item>
+      </layout>
+      <zorder></zorder>
+      <zorder>scheGroupBox</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Sherpa_Export.qrc"/>
+ </resources>
+ <connections/>
+</ui>

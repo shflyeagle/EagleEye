@@ -1,0 +1,17 @@
+§version,4.2.15.0 (2017-12-08)
+§started,2018/03/04 23:48:36
+CLI,"C:\Program Files (x86)\NOKIA\Sherpa\sherpaqtgui.exe" -in "E:/Troubleshooting/LR17.1/AR/AR1-7075366CR01941528 DL Residual BLER degradation in a few sites after SU to CL2 in NY market/B20180216.152624-0500-eNodeB.080802_CENTRAL_EAST_ODAS_2.pcap" -out sherpa -micro -duration 300000 -bw 20 -slot 2 -tx 2 -sep , -ulRetrans 4 -ulRetransRachMsg3 4 -dlRetrans 3 -ulSpsRetrans 0 -dlSpsRetrans 3 -rlcRetrans 10 -pollRetransUl 60 -pollRetransDl 200 -dlcallflow 
+File,E:/Troubleshooting/LR17.1/AR/AR1-7075366CR01941528 DL Residual BLER degradation in a few sites after SU to CL2 in NY market/B20180216.152624-0500-eNodeB.080802_CENTRAL_EAST_ODAS_2.pcap
+slot,2
+bandwidth, 20
+Tx antennas,2
+ul max trans (eNode Database value),5
+ul max trans rachmsg2 (eNode Database value),5
+dl max trans (eNode Database value),4
+tti bundling max trans (eNode Database value),0
+DSP version,18
+ULT version,18
+DLT version,13
+Input Description,"File: E:/Troubleshooting/LR17.1/AR/AR1-7075366CR01941528 DL Residual BLER degradation in a few sites after SU to CL2 in NY market/B20180216.152624-0500-eNodeB.080802_CENTRAL_EAST_ODAS_2.pcap beginTimeval:2018/02/16 23:26:24.286 endTimeval:2018/02/16 23:30:00.005 beginFn:12521 endFn:228239 nb seq of missing fn:0 internalWrap:5"
+result,0
+§ended,2018/03/04 23:49:54

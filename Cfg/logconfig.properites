@@ -1,0 +1,22 @@
+log4cplus.rootLogger=TRACE, STDOUT, R 
+#log4cplus.logger.ee=WARN 
+#log4cplus.logger.ee.log_1=FATAL 
+#log4cplus.logger.ee.log_2=FATAL 
+#log4cplus.logger.ee.log_3=WARN 
+
+log4cplus.appender.STDOUT=log4cplus::ConsoleAppender 
+log4cplus.appender.STDOUT.layout=log4cplus::PatternLayout 
+log4cplus.appender.STDOUT.layout.ConversionPattern=%d{%m/%d/%y %H:%M:%S} [%t] %-5p %c{2} %%%x%% - %m [%l]%n 
+
+log4cplus.appender.R=log4cplus::RollingFileAppender 
+log4cplus.appender.R.File=D:\vs2013\sln\EagleEye\log\eelog.log 
+log4cplus.appender.R.MaxFileSize=100MB 
+log4cplus.appender.R.MaxBackupIndex=5
+#log4cplus.appender.R.layout=log4cplus::TTCCLayout
+log4cplus.appender.R.layout=log4cplus::PatternLayout 
+log4cplus.appender.R.layout.ConversionPattern=%d{%m/%d/%y %H:%M:%S} [%t] %-5p %c{2} %%%x%% - %m [%l]%n 
+log4cplus.appender.R.filters.1=log4cplus::spi::LogLevelRangeFilter
+log4cplus.appender.R.filters.1.LogLevelMin=TRACE
+log4cplus.appender.R.filters.1.LogLevelMax=FATAL
+log4cplus.appender.R.filters.1.AcceptOnMatch=true
+log4cplus.appender.R.filters.2=log4cplus::spi::DenyAllFilter
